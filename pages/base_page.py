@@ -8,6 +8,7 @@ from pages.locators import BasePageLocators
 
 class BasePage():
     def __init__(self, driver: RemoteWebDriver, url, timeout = 5):
+    #def __init__(self, driver, url, timeout = 5):
         self.driver = driver
         self.url = url
         self.driver.implicitly_wait(timeout)
@@ -17,10 +18,8 @@ class BasePage():
         self.driver.implicitly_wait(timeout)
     
     def close_banner(self):
-        print("I'm going to close banner")
         time.sleep(5)
         self.driver.find_element(*BasePageLocators.BANNER_CLOSE_ICON).click()
-        print("I closed banner")
     
     def is_element_present(self, how, what):
         try:

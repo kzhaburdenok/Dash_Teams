@@ -21,10 +21,10 @@ class TestUserCreatesNewTeam():
 
     def test_user_creates_teams(self, driver):
         self.link = base_url + "/ones/new?siteId=" + site_id + "&departmentIds=" + department_id
-        print("my link is: ", self.link)
         self.page = TeamsPage(driver, self.link)
         self.page.open()
-        self.page.user_opens_create_new_team_form()
+        self.page.user_selects_teams_tab()
+        self.page.user_creates_new_team()
 
         
 
