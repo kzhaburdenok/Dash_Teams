@@ -24,7 +24,10 @@ class TestUserCreatesNewTeam():
         self.page = TeamsPage(driver, self.link)
         self.page.open()
         self.page.user_selects_teams_tab()
-        self.page.user_creates_new_team()
+        self.page.user_opens_team_creation_pop_up()
+        self.page.user_changes_team_name()
+        self.page.user_changes_team_color()
+        self.page.user_saves_changes_in_team()
 
         
 
