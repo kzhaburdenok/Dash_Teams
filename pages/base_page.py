@@ -17,7 +17,7 @@ class BasePage():
         self.driver.get(self.url)
         self.driver.implicitly_wait(timeout)
     
-    def close_banner(self):
+    def remove_banner(self):
         time.sleep(5)
         self.driver.find_element(*BasePageLocators.BANNER_CLOSE_ICON).click()
     

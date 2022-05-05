@@ -26,4 +26,8 @@ class TeamsPageLocators():
     SET_PICKER_COLOR = (By.XPATH, "//div[contains(@class, 'toggle__label')]")
     CONFIRM_CHANGE_IN_TEAM = (By.XPATH, "//div[contains(@class, 'controls__btn_transfer')]")
     NOTIFICATION_TEAM_CREATED = (By.XPATH, "//div[contains(text(), 'Team created')]")
+    NOTIFICATION_TEAM_REMOVED = (By.XPATH, "//div[contains(text(), 'Team removed')]")    
+    CLOSE_TEAMS_EDITING_FORM = (By.XPATH, "//div[contains(@class, 'controls__btn_close')]/child::button")
+    DELETE_TEAM_BTN = (By.XPATH, "//div[contains(@class, 'controls__btn_delete')]/child::button")
+    CONFIRM_DELETING_BTN = (By.XPATH, "//div[contains(@class, 'btn_submit')]")
     
