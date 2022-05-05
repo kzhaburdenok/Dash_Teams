@@ -25,3 +25,5 @@ class TeamsPageLocators():
     CONFIRM_PICKER_BTN = (By.XPATH, "//div[contains(@class, 'picker__btn_confirm')]")
     SET_PICKER_COLOR = (By.XPATH, "//div[contains(@class, 'toggle__label')]")
     CONFIRM_CHANGE_IN_TEAM = (By.XPATH, "//div[contains(@class, 'controls__btn_transfer')]")
+    NOTIFICATION_TEAM_CREATED = (By.XPATH, "//div[contains(text(), 'Team created')]")
+    

@@ -28,6 +28,8 @@ class TestUserCreatesNewTeam():
         self.page.user_changes_team_name()
         self.page.user_changes_team_color()
         self.page.user_saves_changes_in_team()
+        self.page.check_if_notification_is_displayed()
+        self.page.check_if_team_exists()
 
         
 
